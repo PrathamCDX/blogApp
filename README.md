@@ -29,7 +29,7 @@ https://blogapp-backend-n7sv.onrender.com/
   Edit a  blog:   PUT /posts
                       req : {id:number, title: string, content: string}
                       
-//frontend hosted:
+//frontend hosted(Cold start issues persist):
 
 https://blog-app-frontend-nine-psi.vercel.app/
 
