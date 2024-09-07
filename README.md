@@ -1,13 +1,19 @@
 //For running in local env
   For backend:
+  
   cd backend
+  
   npm i
+  
   npm start 
-  http://localhost:7676/
+  
 
   For frontend
+  
   cd frontend
+  
   npm i 
+  
   npm run dev
   
 //backend hoisted: 
