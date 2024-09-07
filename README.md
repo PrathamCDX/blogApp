@@ -8,11 +8,11 @@
   npm start 
   
 
-  For frontend
+  //For frontend
   
-  cd frontend
+    cd frontend
   
-  npm i 
+    npm i 
   
   npm run dev
   
