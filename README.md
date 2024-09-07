@@ -1,11 +1,11 @@
 //For running in local env
   For backend:
   
-  cd backend
+    cd backend
   
-  npm i
+    npm i
   
-  npm start 
+    npm start 
   
 
   //For frontend
@@ -14,7 +14,7 @@
   
     npm i 
   
-  npm run dev
+    npm run dev
   
 //backend hoisted: 
 
