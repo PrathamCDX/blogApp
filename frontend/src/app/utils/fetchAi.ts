@@ -1,5 +1,4 @@
 import Groq from "groq-sdk";
-import { set } from "react-hook-form";
 
 const groq = new Groq({
   apiKey: process.env.NEXT_PUBLIC_API,
