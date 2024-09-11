@@ -22,19 +22,16 @@ export default function DeleteButton({ id }: { id: number }) {
   const context = useContext(renderContext);
   if (!context) return null;
 
-  const { render, setRender } = context;
+  const { setRender } = context;
 
   const handleClick = async () => {
     try {
-      // Perform delete request
       setLoading(true);
       const response = await axios.delete(
         `https://blogapp-backend-n7sv.onrender.com/api/posts/${id}`
       );
 
-      // Check if deletion was successful
       if (response.status === 200) {
-        // Update the render state to force re-fetching of posts
         setRender({ reRender: true });
       } else {
         console.error("Failed to delete the post.");
