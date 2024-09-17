@@ -13,7 +13,7 @@ export async function fetchAi({
   setAskAiContent: React.Dispatch<React.SetStateAction<string>>;
 }) {
   setAskAiContent("Generating >>>>");
-  content = `generate ${content}  `;
+  content = `generate ${content} in a creative way with in 500 words `;
   const stream = await getGroqChatCompletion(content);
   setAskAiContent("");
   for await (const chunk of stream) {
@@ -32,8 +32,8 @@ export async function getGroqChatCompletion(content: string) {
         content: content,
       },
     ],
-    // model: "gemma2-9b-it",
-    model: "llama3-70b-8192",
+    model: "gemma2-9b-it",
+    // model: "llama3-70b-8192",
     // model: "mixtral-8x7b-32768",
     temperature: 0.5,
     stream: true,
